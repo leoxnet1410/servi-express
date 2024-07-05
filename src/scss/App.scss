@@ -520,19 +520,26 @@ body {
   padding: 20px;
 }
 
-.info-card {
-  border: none;
-  margin-bottom: 20px;
+.contact-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-image {
+  object-fit: cover;
+  height: 100%;
 }
 
 .small-card {
-  height: 300px; /* Ajusta la altura según sea necesario */
-  max-width: 100%; /* Asegura que las tarjetas no sean demasiado anchas */
-  margin: 20px 10px; /* Añade margen entre las tarjetas */
+  height: 100%; 
+  max-width: 100%; 
+  margin: 20px 10px; 
 }
 
 .card-image {
-  height: 150px; /* Ajusta la altura según sea necesario */
+  height: 150px; 
   object-fit: cover;
 }
 
@@ -541,14 +548,22 @@ body {
   margin-bottom: 10px;
 }
 
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; 
+  -webkit-box-orient: vertical;
+}
+
 .carousel .carousel-item {
   width: 100%;
-  height: 300px; /* Ajusta la altura según sea necesario */
+  height: 300px; 
 }
 
 .carousel .info-card {
-  height: 100%; /* Asegura que la tarjeta ocupe toda la altura del carrusel */
-  border: 1px solid #000; /* Borde mínimo */
+  height: 100%; 
+  border: 1px solid #000; 
 }
 
 .carousel .info-card .card-body {
@@ -560,11 +575,16 @@ body {
 }
 
 .contact-card {
-  border: 2px solid black; /* Borde sólido negro */
-  height: 100%; /* Asegura que el sidebar ocupe toda la altura */
-  margin-top: 20px; /* Separación adicional desde el top */
+  border: 2px solid black; 
+  height: 100%; 
+  margin-top: 20px; 
 }
-
+.sibde{
+  height: 80%; 
+  max-width: 100%; 
+  margin: 20px 10px;
+  
+}
 
 
 ///CreateCompany

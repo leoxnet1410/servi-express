@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card, Image, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Card, Carousel,Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHandshake, faBullseye, faStar, faConciergeBell
@@ -8,7 +8,7 @@ import ojoImage from './services/img/ojo.jpg';
 import imagesImage from './services/img/images.png';
 import descargaImage from './services/img/descarga.png';
 import descarga1Image from './services/img/descarga (1).png';
-
+import sibdeImage from './services/img/sibde.png';
 const cardData = [
   {
     image: imagesImage,
@@ -59,9 +59,36 @@ const cardData = [
 ];
 
 const carouselItems = [
-  'Gracias por confiar en Servicios Libres. Nos esforzamos cada día por mejorar y brindarles el mejor servicio posible. Su satisfacción es nuestra prioridad, y estamos aquí para ayudarles en todo lo que necesiten. ¡Su confianza es nuestro mayor logro!',
-  'Nuestro objetivo es seguir creciendo y mejorando para ofrecerles siempre el mejor servicio. Cada día es una nueva oportunidad para innovar y superar sus expectativas.',
-  'Estamos aquí para servirles con el mayor compromiso y responsabilidad, siempre atentos a sus necesidades y buscando la manera de hacer su vida más fácil.',
+  {
+    text: 'Gracias por confiar en Servicios Libres. Nos esforzamos cada día por mejorar y brindarles el mejor servicio posible. Su satisfacción es nuestra prioridad, y estamos aquí para ayudarles en todo lo que necesiten.',
+  },
+  {
+    text: 'Nuestro objetivo es seguir creciendo y mejorando para ofrecerles siempre el mejor servicio. Cada día es una nueva oportunidad para innovar y superar sus expectativas.',
+  },
+  {
+    text: 'Estamos aquí para servirles con el mayor compromiso y responsabilidad, siempre atentos a sus necesidades y buscando la manera de hacer su vida más fácil.',
+  },
+  {
+    text: 'En Servicios Libres, creemos en la importancia de conectar a las personas con los servicios que necesitan, de manera rápida y confiable. ¡Tu comodidad es nuestra misión!',
+  },
+  {
+    text: 'Trabajamos incansablemente para ser la plataforma líder en la conexión de personas con servicios de alta calidad. ¡Tu satisfacción es nuestro éxito!',
+  },
+  {
+    text: 'La confianza y la calidad son los pilares de nuestro servicio. Nos dedicamos a ofrecer una plataforma segura y eficiente para que encuentres las mejores soluciones.',
+  },
+  {
+    text: 'Cada día nos dedicamos a innovar y mejorar para ofrecerte un servicio que supere tus expectativas. Gracias por ser parte de Servicios Libres.',
+  },
+  {
+    text: 'En Servicios Libres, tu confianza es nuestro mayor logro. Nos comprometemos a brindarte el mejor servicio, siempre atentos a tus necesidades.',
+  },
+  {
+    text: 'Ofrecemos una amplia gama de servicios para facilitar tu vida. Desde reparaciones del hogar hasta consultoría profesional, estamos aquí para ayudarte en todo lo que necesites.',
+  },
+  {
+    text: 'La satisfacción de nuestros usuarios es nuestra prioridad. Nos esforzamos por ofrecer un servicio rápido, confiable y de alta calidad. ¡Gracias por elegirnos!',
+  },
 ];
 
 const Conocenos = () => {
@@ -75,7 +102,7 @@ const Conocenos = () => {
                 <Card className="info-card">
                   <Card.Body>
                     <Card.Title>Mensaje para Nuestros Usuarios</Card.Title>
-                    <Card.Text>{item}</Card.Text>
+                    <Card.Text>{item.text}</Card.Text>
                   </Card.Body>
                 </Card>
               </Carousel.Item>
@@ -89,7 +116,6 @@ const Conocenos = () => {
             {cardData.map((card, index) => (
               <Col md={5} className="mb-4" key={index}>
                 <Card className="info-card small-card">
-                  <Image src={card.image} fluid className="card-image" />
                   <Card.Body>
                     <FontAwesomeIcon icon={card.icon} className="icon" />
                     <Card.Title>{card.title}</Card.Title>
@@ -101,15 +127,8 @@ const Conocenos = () => {
           </Row>
         </Col>
         <Col md={4}>
-          <Card className="info-card contact-card">
-            <Card.Body>
-              <Card.Title>Contáctanos para mayor informacion</Card.Title>
-              <Card.Text>
-                <p>Email: contacto@serviciexpress.com</p>
-                <p>Teléfono: +123 456 7890</p>
-                <p>Dirección: Calle nueva  123, Ciudad, País</p>
-              </Card.Text>
-            </Card.Body>
+          <Card className="sibde">
+          <Image src={sibdeImage} fluid className="w-100 h-100 contact-image" />
           </Card>
         </Col>
       </Row>
@@ -118,3 +137,4 @@ const Conocenos = () => {
 };
 
 export default Conocenos;
+
