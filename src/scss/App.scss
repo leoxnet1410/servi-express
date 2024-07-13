@@ -13,21 +13,19 @@ body {
     color: white;
   }
 
-  .navDropdown {
-    margin-right: 15px;
+  .profile-toggle .dropdown-menu {
+    background-color: white; // Color de fondo del menú desplegable
+  }
 
-    .navDropdownItem {
+  .dropdownItemCustom {
+    color: black;
+
+    &:hover {
+      background-color: #4e8e8e; // Cambia al color de fondo deseado para el hover
       color: black;
-
-      &:hover {
-        background-color: #4e8e8e; // Cambia al color de fondo deseado para el hover
-        color: white;
-      }
     }
   }
 }
-
-
 
 //filter
 .filtro-container {
@@ -255,7 +253,7 @@ body {
   }
 
   a {
-    color: white;
+    color: black;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
@@ -263,7 +261,7 @@ body {
 
   button {
     background-color: black;
-    color: #fff;
+    color:black;
     font-size: 12px;
     padding: 10px 45px;
     border: 1px solid transparent;
@@ -696,4 +694,127 @@ body {
   background-color: black; /* Fondo negro al pasar el ratón */
   color: white; /* Texto blanco al pasar el ratón */
   border-color: black; /* Borde negro al pasar el ratón */
+}
+
+///vendedor
+.service-provider-dashboard {
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 20px; // Agrega margen superior a la imagen de perfil
+  }
+
+  .card {
+    text-align: center;
+    margin-top: 20px; // Agrega margen superior a las tarjetas
+  }
+
+  .progress {
+    height: 2rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+
+  .table {
+    margin-bottom: 0;
+  }
+}
+/// vendedor 
+.profile-config {
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .id-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .form-group {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btn-save {
+    background-color: #28a745;
+    border-color: #28a745;
+    &:hover {
+      background-color: #218838;
+      border-color: #1e7e34;
+    }
+  }
 }
