@@ -13,6 +13,8 @@ import Ready from "./ready/Ready";
 import Conocenos from "./aboutUs";
 import Profile from "./navbar/Profile";
 import  CompanyRegistration from "./form/CreateCompany"
+import ServiceProviderDashboard from "./ProviderDashboard"
+import ProfileConfig from "./confi";
 
 import './scss/App.scss';
 
@@ -50,6 +52,8 @@ function App() {
           <Route path="/Ready" element={<Ready/>} />
           <Route path="/Profile" element={<Profile/>} />
           <Route path="/CreateCompany" element={<CompanyRegistration/>} />
+          <Route path="/ProviderDashboard" element={<ServiceProviderDashboard/>} />
+          <Route path="/config" element={<ProfileConfig/>} />
         </Routes>
       </Container>
     </BrowserRouter>
