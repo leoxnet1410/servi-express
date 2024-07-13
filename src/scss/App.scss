@@ -818,3 +818,37 @@ body {
     }
   }
 }
+/* Margen superior para separar del navbar */
+.appointments-container {
+  margin-top: 20px; /* Ajusta este valor según sea necesario */
+}
+
+/* Otros estilos ya mencionados */
+.card {
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.calendar {
+  height: 700px; /* Altura del calendario */
+}
+
+.bg-primary {
+  background-color: #007bff !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.custom-event {
+  font-size: 14px;
+}

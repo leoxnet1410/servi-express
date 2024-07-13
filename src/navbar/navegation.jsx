@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Container, Dropdown, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle, faCog, faSignOutAlt, faTachometerAlt, faBell, faBuilding } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle, faCog, faSignOutAlt, faTachometerAlt, faBell, faBuilding, faBook } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import perfilImage from "../services/img/perfil.png";
 
@@ -47,6 +47,9 @@ const Nave = () => {
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} to="/notifications" className="dropdownItemCustom">
                   <FontAwesomeIcon icon={faBell} className="menu-icon" /> Notificaciones
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} to="/diary" className="dropdownItemCustom">
+                  <FontAwesomeIcon icon={faBook} className="menu-icon" /> Agenda
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>

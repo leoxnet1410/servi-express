@@ -15,6 +15,7 @@ import Profile from "./navbar/Profile";
 import  CompanyRegistration from "./form/CreateCompany"
 import ServiceProviderDashboard from "./ProviderDashboard"
 import ProfileConfig from "./confi";
+import Appointments from "./diary";
 
 import './scss/App.scss';
 
@@ -54,6 +55,8 @@ function App() {
           <Route path="/CreateCompany" element={<CompanyRegistration/>} />
           <Route path="/ProviderDashboard" element={<ServiceProviderDashboard/>} />
           <Route path="/config" element={<ProfileConfig/>} />
+          <Route path="/diary" element={<Appointments/>} />
+
         </Routes>
       </Container>
     </BrowserRouter>
